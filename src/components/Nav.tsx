@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Link } from "react-router-dom";
-import Icon from './icon';
+import Icon from './Icon';
 
 
 
@@ -31,18 +31,18 @@ const Nav = () => {
         <NavWrapper>
             <ul>
                 <li>
-                    <Icon name="label" />
-                    <Link to="/tags">标签页</Link>
+
+                    <Link to="/tags"><Icon name="label" />标签页</Link>
                 </li>
                 <li>
-                    <Icon name="money" />
 
-                    <Link to="/money">记账页</Link>
+
+                    <Link to="/money"><Icon name="money" />记账页</Link>
                 </li>
                 <li>
-                    <Icon name="statistics" />
 
-                    <Link to="/statistics">统计页</Link>
+
+                    <Link to="/statistics"><Icon name="statistics" />统计页</Link>
                 </li>
             </ul>
         </NavWrapper>
