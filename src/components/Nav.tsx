@@ -11,17 +11,20 @@ const NavWrapper = styled.nav`
   >ul {
     display: flex;
     >li{
-      width: 33.3%;
-      padding:4px 0;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .icon{
-        width: 24px;
-        height: 24px;
+        width: 33.3%;
+        text-align: center;
+        >a{
+            display: flex;
+            flex-direction: column;
+            padding:4px 0;
+            justify-content: center;
+            align-items: center;
+            .icon{
+                width: 24px;
+                height: 24px;
       }
+
+        }
     }
   }
 `;
