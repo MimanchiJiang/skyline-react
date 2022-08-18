@@ -2,6 +2,11 @@ import Layout from "components/Layout"
 import styled from 'styled-components';
 
 const TagsSection = styled.section`
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
     background: #FFF;
     padding: 12px 16px;
     >ol{
@@ -129,9 +134,14 @@ flex-direction: column;
 }
 `
 
+const MyLayout = styled(Layout)`
+    display: flex;
+    flex-direction: column;
+`
+
 function Money() {
     return (
-        <Layout>
+        <MyLayout>
             <TagsSection className="tags">
                 <ol>
                     <li>衣</li>
@@ -172,7 +182,7 @@ function Money() {
                     <button>.</button>
                 </div>
             </NumberPadSection>
-        </Layout>
+        </MyLayout>
     )
 }
 
