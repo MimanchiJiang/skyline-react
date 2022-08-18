@@ -1,10 +1,14 @@
 import styled from "styled-components"
 import {
-    HashRouter as Router,
-    Routes,
-    Route,
+
     Link
 } from "react-router-dom";
+require('assets/icons/money.svg')
+require('assets/icons/label.svg')
+require('assets/icons/statistics.svg')
+
+
+
 const NavWrapper = styled.nav`
   line-height: 24px;
   box-shadow: 0 0 3px rgba(0,0,0,0.25);
@@ -12,8 +16,16 @@ const NavWrapper = styled.nav`
     display: flex;
     >li{
       width: 33.3%;
+      padding:4px 0;
       text-align: center;
-      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 `;
@@ -23,12 +35,27 @@ const Nav = () => {
         <NavWrapper>
             <ul>
                 <li>
+                    <svg className="icon">
+                        <use xlinkHref="#label">
+
+                        </use>
+                    </svg>
                     <Link to="/tags">标签页</Link>
                 </li>
                 <li>
+                    <svg className="icon">
+                        <use xlinkHref="#money">
+
+                        </use>
+                    </svg>
                     <Link to="/money">记账页</Link>
                 </li>
                 <li>
+                    <svg className="icon">
+                        <use xlinkHref="#statistics">
+
+                        </use>
+                    </svg>
                     <Link to="/statistics">统计页</Link>
                 </li>
             </ul>

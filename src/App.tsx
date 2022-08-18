@@ -4,7 +4,6 @@ import {
   HashRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import styled from "styled-components";
 import Nav from "components/Nav"
